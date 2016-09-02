@@ -27,7 +27,6 @@ class StageObserver
 	private var _filter = ~/^mx\.|^spark\.|^flash\./;
 	
 	private var _registry:ContainerRegistry;
-	var traver:DisplaylistTraverser;
 
 	/*============================================================================*/
 	/* Constructor                                                                */
