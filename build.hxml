@@ -6,5 +6,6 @@
 -lib swiftsuspenders
 -dce no
 -swf-version 12
+-D compliant_stage_events
 -D stage3Donly
 --macro include('robotlegs')
