@@ -7,9 +7,5 @@
 	"version": "0.3.4",
 	"releasenote": "stop CommandTriggerMap using String in ObjectMap",
 	"contributors": [ "p.j.shand" ],
-	"dependencies": {
-		"openfl": "",
-		"swiftsuspenders": "",
-		"msignal": ""
-	}
+	"dependencies": { }
 }

@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<library xmlns="duell"></library>
+<library xmlns="duell">
+	<duelllib name="openfl" version="10.0.0+"/>
+	<duelllib name="swiftsuspenders" version="10.0.0+"/>
+	<haxelib name="msignal" version=""/>
+</library>
