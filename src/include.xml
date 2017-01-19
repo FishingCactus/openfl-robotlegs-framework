@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <haxelib name="openfl" if="local"/>
+    <haxelib name="swiftsuspenders" if="local"/>
+    <haxelib name="msignal" if="local" />
+</extension>
