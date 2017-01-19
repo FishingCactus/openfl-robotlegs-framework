@@ -109,7 +109,7 @@ class Context extends EventDispatcher implements IContext
 	{
 		return _lifecycle.active;
 	}
-	
+
 	public var suspended(get, null):Bool;
 	/**
 	 * @inheritDoc
@@ -308,7 +308,7 @@ class Context extends EventDispatcher implements IContext
 	/**
 	 * @inheritDoc
 	 */
-	
+
 	public function install(extensions:Dynamic):IContext
 	{
 		if (Std.is(extensions, Array)) {
@@ -342,7 +342,7 @@ class Context extends EventDispatcher implements IContext
 		}
 		return this;
 	}
-	
+
 	private function configureObject(config:Dynamic):Void
 	{
 		#if (js)
@@ -399,7 +399,7 @@ class Context extends EventDispatcher implements IContext
 	/**
 	 * @inheritDoc
 	 */
-	public function addConfigHandler(matcher:IMatcher, handler:Void->Void):IContext
+	public function addConfigHandler(matcher:IMatcher, handler:Dynamic):IContext
 	{
 		_configManager.addConfigHandler(matcher, handler);
 		return this;
@@ -413,7 +413,7 @@ class Context extends EventDispatcher implements IContext
 		var returnVal:ILogger = _logManager.getLogger(source);
 		return returnVal;
 	}
-	
+
 	/**
 	 * @inheritDoc
 	 */
