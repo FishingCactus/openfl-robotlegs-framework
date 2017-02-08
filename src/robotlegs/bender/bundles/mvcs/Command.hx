@@ -28,7 +28,8 @@ class Command implements ICommand
 	/**
 	 * @inheritDoc
 	 */
-	public function execute():Void
+	@:keep
+public function execute():Void
 	{
 	}
 }
