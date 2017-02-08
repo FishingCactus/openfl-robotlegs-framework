@@ -64,7 +64,6 @@ class ExtensionInstaller
 		else
 		{
 			var id = UID.instanceID(extension);
-			var extensionClass:Class<Dynamic> = Type.getClass(extension);
 			if (_classes[id] == true){
 				return;
 			}

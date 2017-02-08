@@ -128,12 +128,12 @@ class ConfigManager
 	{
 		if (_initialized)
 		{
-			_logger.debug("Already initialized. Instantiating config class {0}", [type]);
+			_logger.debug("Already initialized. Instantiating config class {0}", [Type.getClassName(type)]);
 			processClass(type);
 		}
 		else
 		{
-			_logger.debug("Not yet initialized. Queuing config class {0}", [type]);
+			_logger.debug("Not yet initialized. Queuing config class {0}", [Type.getClassName(type)]);
 			_queue.push(type);
 		}
 	}
@@ -196,9 +196,8 @@ class ConfigManager
 		if (object != null) {
 			
 			
-			var className = CallProxy.getClassName(type);
-			var hasFeild = CallProxy.hasField(object, "configure");
-			if (hasFeild) {
+			var hasField = CallProxy.hasField(object, "configure");
+			if (hasField) {
 				#if js
 					untyped __js__("object['configure']();");
 				#else 

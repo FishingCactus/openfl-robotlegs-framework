@@ -144,7 +144,6 @@ class ViewProcessorFactory implements IViewProcessorFactory
 
 	private function mapTypeForFilterBinding(filter:ITypeFilter, type:Class<Dynamic>, view:Dynamic):Void
 	{
-		var requiredType:Class<Dynamic>;
 		var requiredTypes:Array<Class<Dynamic>> = requiredTypesFor(filter, type);
 
 		for (requiredType in requiredTypes)
@@ -155,7 +154,6 @@ class ViewProcessorFactory implements IViewProcessorFactory
 
 	private function unmapTypeForFilterBinding(filter:ITypeFilter, type:Class<Dynamic>, view:Dynamic):Void
 	{
-		var requiredType:Class<Dynamic>;
 		var requiredTypes:Array<Class<Dynamic>> = requiredTypesFor(filter, type);
 
 		for (requiredType in requiredTypes)
