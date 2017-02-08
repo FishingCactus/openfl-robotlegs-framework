@@ -47,6 +47,7 @@ class Away3DViewMap implements IAway3DViewMap
 	
 	// FIX / CHECK
 	@postConstruct
+@:keep
 	//[PostConstruct]
 	/**
 	 * Initialize listeners on Away3D scene.
