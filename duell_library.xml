@@ -2,5 +2,5 @@
 <library xmlns="duell">
 	<!-- <duelllib name="openfl" version="10.0.0+"/> -->
 	<duelllib name="swiftsuspenders" version="10.0.0+"/>
-	<haxelib name="msignal" version=""/>
+	<haxelib name="msignal" version="1.2.4" />
 </library>
