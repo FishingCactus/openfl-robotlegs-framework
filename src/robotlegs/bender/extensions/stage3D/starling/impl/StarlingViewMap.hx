@@ -33,7 +33,8 @@ class StarlingViewMap implements IStarlingViewMap
 	/*============================================================================*/
 	public function new() { }
 	
-	@postConstruct//[PostConstruct]
+	@postConstruct
+@:keep//[PostConstruct]
 	/**
 	 * Initialize listeners on Starling views.
 	 */		
